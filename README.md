@@ -12,6 +12,7 @@ This repository provides a step-by-step guide to building, configuring, and depl
 I will assume you have first created a game, and I will primarily focus on the exporting and embedding of the build.
 This guide will include detailed instructions, with images to guide you through delivering Unity
 games or applications to a web platforms.
+
 ---
 
 ## Part 1 - Environment Setup
