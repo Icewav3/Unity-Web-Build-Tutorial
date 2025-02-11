@@ -32,7 +32,8 @@ Then go ahead and launch your project, once your project opens go ahead and go t
 
 Next we need to switch platforms with the highlighted option WebGL, and then we will click the bottom right "switch
 platform" button
-![img_5.png](img_5.png)
+
+![img_5.png](Images/img_5.png)
 
 Once you have successfully switched platforms go ahead and go to player settings.
 ![img_4.png](Images/img_4.png)
