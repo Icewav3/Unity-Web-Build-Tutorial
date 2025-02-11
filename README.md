@@ -46,7 +46,7 @@ around
 Once this is set then we can go ahead and go back to the project settings window. But before we do anything else,
 make SURE all the scenes that are part of your game are added to the list. As shown below you can use Add open
 scenes, also ensure the checkboxes are checked before building.
-![img_8.png](Images/img_8.png)
+![img_8.png](Images/img_7.png)
 
 Then go ahead and click build and run. And Viola you will have a web build that will now pop up once it compiles!
-![img_7.png](Images/img_7.png)
+![img_7.png](Images/img_8.png)
