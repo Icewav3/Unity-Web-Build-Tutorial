@@ -1,4 +1,4 @@
-# Unity Web Build Tutorial 
+# Unity Web Build Tutorial
 
 ## By: Cole Dorman
 
