@@ -4,15 +4,28 @@
 
 ### Designed for Unity version 2022.3.31f1
 
----
 
-## Summary:
+# Table of Contents
+
+1. [Summary](#summary)
+2. [Building your game](#building-your-game)  
+   1. [Outcome](#build-outcome)
+3. [Embedding your game into a webpage](#embedding-your-game-into-a-webpage)  
+   1. [Outcome](#embed-outcome)
+4. [Faq](#faq)
+
+
+## Summary
 
 This repository provides a step-by-step guide to building, configuring, and deploying Unity projects as web builds.
 This guide will assume you have basic unity knowledge and a game built and will include detailed instructions, with images to guide you through delivering Unity
 games or applications to a web platforms.
 
----
+# Building your game
+
+## Build Outcome
+
+By the end of this guide you will have a html build locally of your game in web assembly.
 
 ## Part 1 - Environment Setup
 
@@ -61,3 +74,18 @@ scenes, also ensure the checkboxes are checked before building.
 Then click build and run. Shortly once it builds you will have a web build that will pop up once it compiles!
 
 ![img_7.png](Images/img_8.png)
+
+---
+
+# Embedding your game into a webpage
+
+## Embed Outcome
+
+By the end of this section of the guide you will have a working embedded game on your webpage that can is handled in an Iframe.
+
+# Part 1
+
+# Part 2
+
+
+# Faq
