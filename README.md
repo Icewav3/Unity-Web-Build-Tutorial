@@ -8,10 +8,25 @@
 # Table of Contents
 
 1. [Summary](#summary)
+
 2. [Building your game](#building-your-game)  
+
    1. [Outcome](#build-outcome)
+
+   2. [Step 1 - Environment Setup](#step-1---environment-setup)
+
+   3. [Step 2 - Changing Platforms](#step-2---changing-platforms)
+
+   4. [Step 3 - Building the game](#step-3---building-the-game)
+
 3. [Embedding your game into a webpage](#embedding-your-game-into-a-webpage)  
+
    1. [Outcome](#embed-outcome)
+
+   2. [Step 1 - Moving the Build](#step-1---moving-the-build)
+
+   3. [Step 2 - Testing and Embedding](#step-2---testing-and-embedding)
+
 4. [Faq](#faq)
 
 
@@ -27,7 +42,7 @@ games or applications to a web platforms.
 
 By the end of this guide you will have a html build locally of your game in web assembly.
 
-## Part 1 - Environment Setup
+## Step 1 - Environment Setup
 
 Firstly ensure the correct Unity modules are installed. You can install the needed packages from Unity
 hub, as shown with the red arrow below. Just click on the settings icon.
@@ -41,7 +56,7 @@ Select add modules.
 Scroll down until you find WebGL. In this image it is installed, but you will have a little
 checkbox to the left as shown in the image below.
 
-## Part 2 - Changing Platforms
+## Step 2 - Changing Platforms
 
 ![img_2.png](Images/img_2.png)
 
@@ -54,7 +69,7 @@ platform" button
 
 ![img_5.png](Images/img_5.png)
 
-## Part 3 Building the game
+## Step 3 - Building the game
 
 Go to player settings.
 
@@ -83,9 +98,35 @@ Then click build and run. Shortly once it builds you will have a web build that 
 
 By the end of this section of the guide you will have a working embedded game on your webpage that can is handled in an Iframe.
 
-# Part 1
+# Step 1 - Moving the Build
+Firstly navigate to the build folder from the prior steps, this is usually located in the following directory, if you have installed everything in their default paths
 
-# Part 2
+```
+C:\Users\<YourUsername>\Documents\Unity Projects\<YourProjectName>\Build\
+```
+This is what your folder should look like
 
+![image](https://github.com/user-attachments/assets/0eed0306-032a-4047-85e0-180c62d24cc6)
+
+What are these?
+
+- Build/ – Contains Unity WebGL build files, including .wasm, .js, and .data.
+- TemplateData/ – Stores Unity WebGL template assets like styles and scripts.
+- index.html – Main HTML file that loads the WebGL game in a browser as an index.html page.
+
+<ins>NOTE: I reccomend going and renaming the file from index.html to another name, as you will probably have a index.html on your website alreadly. (shown below)</ins>
+
+![image](https://github.com/user-attachments/assets/c8de1054-f853-44c5-a39b-3c79b1467e08)
+
+Lastly move all 3 files to your website's source code. 
+*For context the game I am using in this demonsration is called Miku's Mall Madness*
+
+![image](https://github.com/user-attachments/assets/bcff01b2-cd68-4a15-874a-9f5daca0f771)
+
+Once you moved it into a website it should look like this: 
+
+![image](https://github.com/user-attachments/assets/38b2a715-2e56-4bb2-8693-13a2ab12252f)
+
+# Step 2 - Testing and Embedding
 
 # Faq
