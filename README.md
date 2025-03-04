@@ -99,12 +99,12 @@ Then click build and run. Shortly once it builds you will have a web build that 
 By the end of this section of the guide you will have a working embedded game on your webpage that can is handled in an Iframe.
 
 # Step 1 - Moving the Build
-Firstly navigate to the build folder from the prior steps, this is usually located in the following directory, if you have installed everything in their default paths
+Firstly navigate to the build folder from the prior steps, this is usually located in the following directory (Given everything is installed everything in their default paths)
 
 ```
 C:\Users\<YourUsername>\Documents\Unity Projects\<YourProjectName>\Build\
 ```
-This is what your folder should look like
+This is what the build folder should look like
 
 ![image](https://github.com/user-attachments/assets/0eed0306-032a-4047-85e0-180c62d24cc6)
 
@@ -114,12 +114,13 @@ What are these?
 - TemplateData/ – Stores Unity WebGL template assets like styles and scripts.
 - index.html – Main HTML file that loads the WebGL game in a browser as an index.html page.
 
-<ins>NOTE: I reccomend going and renaming the file from index.html to another name, as you will probably have a index.html on your website alreadly. (shown below)</ins>
+> **Note:** I recommend renaming the file from `index.html` to another name, as you will probably already have an `index.html` on your website. (Shown below)
 
 ![image](https://github.com/user-attachments/assets/c8de1054-f853-44c5-a39b-3c79b1467e08)
 
 Lastly move all 3 files to your website's source code. 
-*For context the game I am using in this demonsration is called Miku's Mall Madness*
+
+> **Note:** For context, the game I am using in this demonstration is called *Miku's Mall Madness*.
 
 ![image](https://github.com/user-attachments/assets/bcff01b2-cd68-4a15-874a-9f5daca0f771)
 
