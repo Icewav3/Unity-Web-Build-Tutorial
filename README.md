@@ -124,10 +124,76 @@ Lastly move all 3 files to your website's source code.
 
 ![image](https://github.com/user-attachments/assets/bcff01b2-cd68-4a15-874a-9f5daca0f771)
 
-Once you moved it into a website it should look like this: 
-
-![image](https://github.com/user-attachments/assets/38b2a715-2e56-4bb2-8693-13a2ab12252f)
-
 # Step 2 - Testing and Embedding
+
+Given the following folder structure:
+![image](https://github.com/user-attachments/assets/07e84955-574b-4a84-9444-493280233586)
+
+
+It can either be directly linked to it as a page such as:
+```html
+<a href="./MikusMallMadness/MikusMallMadnessGameDesktop.html">Miku's Mall Madness Game (Desktop)</a>
+```
+
+Or embedded using an Iframe:
+
+```html
+<iframe
+        id="gameIframe"
+        src=""
+        title="Miku's Mall Madness">
+</iframe>
+```
+
+To test go ahead and open the file or run your development build of your site in the browser:
+
+![image](https://github.com/user-attachments/assets/1bd73d06-d3c9-483b-9bc1-ac1f8d2f185c)
+
+*Try to play it through, ensure UI properly scales and the build is not broken.*
+
+# Bonus:
+
+> **Note:** I have found that a lot of issues exist when doing Iframe embeds so I had found some solutions to certain one, there are as follows:
+
+## Iframes not correctly sizing:
+
+My solution for this one was to copy and paste the game's index file to create 2 versions as follows:
+
+![image](https://github.com/user-attachments/assets/055a6351-c9d2-48bb-9a77-ade67aec5686)
+
+In each you will want to check the following:
+
+Make sure the canvas height is what was specified project settings of the unity build.
+
+![image](https://github.com/user-attachments/assets/4cd8f8e9-9f5a-4afa-8d0a-a7eb82f3e9d0)
+
+Then here you may want to customize the sizing of the canvas, this is done in the else statement
+
+![image](https://github.com/user-attachments/assets/2d9a5dfb-5e5a-405e-a6be-d02ce08b8890)
+
+> **Note:** I found that **640px by 480px for desktop** and a measly **128px by 72px for mobile** was most reliable, this is given a 16 by 9 aspect ratio
+
+The following script can then be implemented which will change what the website loads based on the device:
+
+```html
+<!-- this handles desktop vs mobile version-->
+<script>
+   const isMobile = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|Windows Phone|webOS/i.test(navigator.userAgent);
+   const iframe = document.getElementById('gameIframe');
+   iframe.src = isMobile ? "MikusMallMadnessGameMobile.html" : "MikusMallMadnessGameDesktop.html";
+</script>
+        
+```
+
+This is a handy fallback that will prevent the website from appearing broken without reason
+
+```html
+<!-- Fallback message if JavaScript is disabled -->
+<noscript>
+   <p style="text-align: center;">
+       The game requires JavaScript to run. Please enable JavaScript in your browser to play the game.
+   </p>
+</noscript>
+```
 
 # Faq
