@@ -34,7 +34,7 @@
 
 This repository provides a step-by-step guide to building, configuring, and deploying Unity projects as web builds.
 This guide will assume you have basic unity knowledge and a game built and will include detailed instructions, with images to guide you through delivering Unity
-games or applications to a web platforms.
+games or applications to a web platform.
 
 # Building your game
 
