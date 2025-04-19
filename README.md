@@ -10,26 +10,24 @@
 1. [Summary](#summary)
 
 2. [Building your game](#building-your-game)  
-
-   1. [Outcome](#build-outcome)
-
-   2. [Step 1 - Environment Setup](#step-1---environment-setup)
-
-   3. [Step 2 - Changing Platforms](#step-2---changing-platforms)
-
-   4. [Step 3 - Building the game](#step-3---building-the-game)
+   2.1. [Outcome](#build-outcome)  
+   2.2. [Step 1 – Environment Setup](#step-1---environment-setup)  
+   2.3. [Step 2 – Changing Platforms](#step-2---changing-platforms)  
+   2.4. [Step 3 – Building the game](#step-3---building-the-game)
 
 3. [Embedding your game into a webpage](#embedding-your-game-into-a-webpage)  
+   3.1. [Outcome](#embed-outcome)  
+   3.2. [Step 1 – Moving the Build](#step-1---moving-the-build)  
+   3.3. [Step 2 – Testing and Embedding](#step-2---testing-and-embedding)
 
-   1. [Outcome](#embed-outcome)
+4. [Useful Information and Code](#useful-information-and-code)  
+   4.1. [No JS Fallback](#no-js-fallback)
 
-   2. [Step 1 - Moving the Build](#step-1---moving-the-build)
+5. [FAQ](#faq)  
+   5.1. [Iframes not correctly sizing](#iframes-not-correctly-sizing)
 
-   3. [Step 2 - Testing and Embedding](#step-2---testing-and-embedding)
+6. [Additional Information](#additional-information)
 
-4. [Useful Information and Code](#useful-information-and-code)
-
-4. [Faq](#faq)
 
 
 ## Summary
@@ -204,3 +202,6 @@ The following script can then be implemented which will change what the website 
 
 # Additional Information
 
+[How to optimize your game for web builds](https://unity.com/how-to/profile-optimize-web-build)
+
+[Code obfuscation and security](https://discussions.unity.com/t/protection-security-webgl/782427)
