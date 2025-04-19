@@ -27,6 +27,8 @@
 
    3. [Step 2 - Testing and Embedding](#step-2---testing-and-embedding)
 
+4. [Useful Information and Code](#useful-information-and-code)
+
 4. [Faq](#faq)
 
 
@@ -34,7 +36,7 @@
 
 This repository provides a step-by-step guide to building, configuring, and deploying Unity projects as web builds.
 This guide will assume you have basic unity knowledge and a game built and will include detailed instructions, with images to guide you through delivering Unity
-games or applications to a web platforms.
+games or applications to a web platform.
 
 # Building your game
 
@@ -151,7 +153,22 @@ To test go ahead and open the file or run your development build of your site in
 
 *Try to play it through, ensure UI properly scales and the build is not broken.*
 
-# Bonus:
+# Useful Information and Code
+
+## No JS Fallback
+
+Heere is a handy fallback that will prevent the website from appearing broken without reason
+
+```html
+<!-- Fallback message if JavaScript is disabled -->
+<noscript>
+   <p style="text-align: center;">
+       The game requires JavaScript to run. Please enable JavaScript in your browser to play the game.
+   </p>
+</noscript>
+```
+
+# Faq
 
 > **Note:** I have found that a lot of issues exist when doing Iframe embeds so I had found some solutions to certain one, there are as follows:
 
@@ -185,15 +202,5 @@ The following script can then be implemented which will change what the website 
         
 ```
 
-This is a handy fallback that will prevent the website from appearing broken without reason
+# Additional Information
 
-```html
-<!-- Fallback message if JavaScript is disabled -->
-<noscript>
-   <p style="text-align: center;">
-       The game requires JavaScript to run. Please enable JavaScript in your browser to play the game.
-   </p>
-</noscript>
-```
-
-# Faq
